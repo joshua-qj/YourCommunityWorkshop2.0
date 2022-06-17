@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8062D01D-E1B9-4AEB-8342-C07C0E88B6C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YourCommunityWorkshop</RootNamespace>
+    <AssemblyName>YourCommunityWorkshop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>YourCommunityWorkshop.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActiveTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActiveTools.Designer.cs">
+      <DependentUpon>frmActiveTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvailableTools .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvailableTools .Designer.cs">
+      <DependentUpon>frmAvailableTools .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrandDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrandDetails.Designer.cs">
+      <DependentUpon>frmBrandDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrands.Designer.cs">
+      <DependentUpon>frmBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerDetails.Designer.cs">
+      <DependentUpon>frmCustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewRental.Designer.cs">
+      <DependentUpon>frmNewRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRental.Designer.cs">
+      <DependentUpon>frmRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetiredTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetiredTools.Designer.cs">
+      <DependentUpon>frmRetiredTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturn.Designer.cs">
+      <DependentUpon>frmReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTool.Designer.cs">
+      <DependentUpon>frmTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmToolDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToolDetails.Designer.cs">
+      <DependentUpon>frmToolDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnavailableTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnavailableTools.Designer.cs">
+      <DependentUpon>frmUnavailableTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmActiveTools.resx">
+      <DependentUpon>frmActiveTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvailableTools .resx">
+      <DependentUpon>frmAvailableTools .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrandDetails.resx">
+      <DependentUpon>frmBrandDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrands.resx">
+      <DependentUpon>frmBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerDetails.resx">
+      <DependentUpon>frmCustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewRental.resx">
+      <DependentUpon>frmNewRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRental.resx">
+      <DependentUpon>frmRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetiredTools.resx">
+      <DependentUpon>frmRetiredTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturn.resx">
+      <DependentUpon>frmReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTool.resx">
+      <DependentUpon>frmTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToolDetails.resx">
+      <DependentUpon>frmToolDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnavailableTools.resx">
+      <DependentUpon>frmUnavailableTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DatabaseManagement\DatabaseManagement.csproj">
+      <Project>{30f686a0-9f5d-4a83-b3b6-3e8ce0e88a31}</Project>
+      <Name>DatabaseManagement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
